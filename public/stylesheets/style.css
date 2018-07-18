@@ -1,0 +1,72 @@
+@import "reset.css";
+
+body{
+	overflow:hidden;
+	font-family: Roboto,sans-serif;
+}
+.login-form{
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.all-page{
+	display: flex;
+    height: 1000px;
+}
+.left-side{
+	flex: 2;
+	display: flex;
+	width: 100%;
+	background-color: white;
+	-webkit-box-shadow: 0 2px 6px rgba(0,0,0,.2);
+	box-shadow: 0 2px 6px rgba(0,0,0,.2);
+	z-index: 100;
+}
+
+.right-side{
+	width: 100%;
+	background-color: #BBDEFB;
+	flex: 3;
+}
+.form{
+	width: 50%;
+	margin-top: 1em;
+	margin-bottom: 12em;
+}
+.welcome{
+	margin-left: auto;
+	margin-right: auto;
+}
+.title{
+	font-size: 1.7em;
+}
+.subtitle{
+	margin-top: 1em;
+	margin-left: 1.7em;
+}
+.btn{
+	background-color: #2196F3 !important;
+  }
+  .btn:visited{
+	background-color: #BBDEFB !important;
+  }
+  .btn:active{
+	background-color: #2196F3 !important;
+  }
+
+
+  @keyframes yourAnimation{
+    0%{
+        transform: translateY(-2%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx) translateY(0%);
+        opacity: 1;
+        }
+}
+
+.elementToAnimate{
+    animation: yourAnimation 600ms 1 0s linear;
+}
