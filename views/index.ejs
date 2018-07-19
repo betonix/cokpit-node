@@ -1,33 +1,97 @@
 <%- include('head') %>
-<div class="all-page">
-      <div class="left-side">
-         <div class="login-form">
-           <div class="welcome">
-              <p class="title">Bem vindo ao Cokpit app enem.</p>
-              <p class="subtitle"> Entre no sistema inserindo seu email e senha.</p>
-           </div>
-            <div class="row form">
-                <form class="col s12">               
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <input id="email" type="email" class="validate">
-                      <label for="email">Email</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                      <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
-                        <label for="password">Senha</label>
-                      </div>
-                    </div>
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Entrar
-                        <i class="material-icons right">send</i>
-                      </button>
-                </form>
-              </div>
-         </div>
+<div class="home-page">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="images/office.jpg">
       </div>
-      <div class="right-side">
+      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+      <a href="#name"><span class="white-text name">John Doe</span></a>
+      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <section class="section">
+    <div class="title-cadastro">
+      <h1>Cadastro Pergunta</h1>
+      <h2>Preencha a pergunta e suas alternativas.</h1>
+      <h3>Selecione a alternativa correta.</h3>
+    </div>
+    <div class="row">
+        <form class="col s12">
+          <div class="row">
+              <p>
+                  <label id="resposta">
+                    <input name="group1" type="radio" checked />
+                    <span id="span-resposta"></span>    
+                  </label>
+                </p>
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Resposta 1 </label>
+            </div>
+          </div>
+          <div class="row">
+              <p>
+                  <label id="resposta">
+                    <input name="group1" type="radio" checked />
+                    <span id="span-resposta"></span>    
+                  </label>
+                </p>
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Resposta 1 </label>
+            </div>
+          </div>
+        </form>
       </div>
+    <form action="#">
+      <p>
+        <label id="resposta">
+          <input name="group1" type="radio" checked />
+          <span id="span-resposta"></span>    
+        </label>
+      </p>
+      <p>
+        <label id="resposta">
+          <input name="group1" type="radio" checked />
+          <span id="span-resposta"><input id="input-resposta" placeholder="Resposta 2" id="first_name" type="text" class="validate"></span>    
+        </label>
+      </p>
+      <p>
+        <label id="resposta">
+          <input name="group1" type="radio" checked />
+          <span id="span-resposta"><input id="input-resposta" placeholder="Resposta 3" id="first_name" type="text" class="validate"></span>    
+        </label>
+      </p>
+      <p>
+        <label id="resposta">
+          <input name="group1" type="radio" checked />
+          <span id="span-resposta"><input id="input-resposta" placeholder="Resposta 4" id="first_name" type="text" class="validate"></span>    
+        </label>
+      </p>
+      <p>
+        <label id="resposta">
+          <input name="group1" type="radio" checked />
+          <span id="span-resposta"><input id="input-resposta" placeholder="Resposta 5" id="first_name" type="text" class="validate"></span>    
+        </label>
+      </p>
+    </form>
+  </section>
 </div>
 <%- include('footer') %>

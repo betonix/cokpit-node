@@ -3,13 +3,13 @@ var router = express.Router();
 
 /* GET user information after login */
 
-router.get('/', isAuthenticated, function(req, res, next) {
+router.get('/', function(req, res, next) {
 
-  var username   = req.session.user.username;
+  /*var username   = req.session.user.username;
   var full_name  = req.session.user.full_name;
   
-  res.render('index', { username: username, full_name: full_name });
-
+  res.render('index', { username: username, full_name: full_name });*/
+  res.render('index');
 });
 
 function isAuthenticated(req, res, next) {

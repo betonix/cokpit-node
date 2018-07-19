@@ -1,7 +1,6 @@
 @import "reset.css";
 
 body{
-	overflow:hidden;
 	font-family: Roboto,sans-serif;
 }
 .login-form{
@@ -12,7 +11,7 @@ body{
 }
 .all-page{
 	display: flex;
-    height: 1000px;
+	height: 100vh;
 }
 .left-side{
 	flex: 2;
@@ -26,11 +25,11 @@ body{
 
 .right-side{
 	width: 100%;
-	background-color: #BBDEFB;
+	background-color: #00BCD4;
 	flex: 3;
 }
 .form{
-	width: 50%;
+	width: 25rem;
 	margin-top: 1em;
 	margin-bottom: 12em;
 }
@@ -46,13 +45,13 @@ body{
 	margin-left: 1.7em;
 }
 .btn{
-	background-color: #2196F3 !important;
+	background-color: #607D8B !important;
   }
   .btn:visited{
-	background-color: #BBDEFB !important;
+	background-color: #00BCD4 !important;
   }
   .btn:active{
-	background-color: #2196F3 !important;
+	background-color: #607D8B !important;
   }
 
 
@@ -69,4 +68,43 @@ body{
 
 .elementToAnimate{
     animation: yourAnimation 600ms 1 0s linear;
+}
+
+@media screen and (max-width:768px){
+	.all-page{
+		flex-direction: column-reverse;
+	}
+	.right-side{
+		flex: 1;
+	}
+}
+
+
+/*TELA HOME */
+.nav-wrapper{
+	background: #00BCD4;
+}
+
+.section{
+	width: 30rem;
+	height: 80vh;
+	background: #ffffff;
+	margin-top: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#resposta{
+	display: flex;
+	position: relative;
+	margin-bottom: 2rem;
+}
+#span-resposta{
+	width: 100%;
+    position: relative;
+}
+#input-resposta{
+	position: absolute;
+    top: -24px;
+    max-width: 26.6rem;
 }
